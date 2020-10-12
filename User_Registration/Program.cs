@@ -20,6 +20,12 @@ namespace User_Registration
             return Regex.IsMatch(lastName, REGEX_LAST_NAME);
         }
 
+        public static string REGEX_EMAIL = "^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})*$";
+        public bool validateEmail(string email)
+        {
+            return Regex.IsMatch(email, REGEX_EMAIL);
+        }
+
 
 
     }

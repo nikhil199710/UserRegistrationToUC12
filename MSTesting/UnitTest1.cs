@@ -30,5 +30,17 @@ namespace MSTesting
 
             Assert.AreEqual(expected, var);
         }
+
+        [TestMethod]
+        public void TestEmail()
+        {
+            Pattern pattern = new Pattern();
+            bool expected = true;
+            string input = "abc.xyz@bl.co.in";
+
+            bool var = pattern.validateEmail(input);
+
+            Assert.AreEqual(expected, var);
+        }
     }
 }
