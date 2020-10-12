@@ -17,5 +17,27 @@ namespace MSTesting
 
             Assert.AreEqual(expected, var);
         }
+
+        public void TestLastName()
+        {
+            Pattern pattern = new Pattern();
+            bool expected = true;
+            string input = "Yadav";
+
+            bool var = pattern.validateLastName(input);
+
+            Assert.AreEqual(expected, var);
+        }
+
+        public void TestEmail()
+        {
+            Pattern pattern = new Pattern();
+            bool expected = true;
+            string input = "Nikhil";
+
+            bool var = pattern.validateEmail(input);
+
+            Assert.AreEqual(expected, var);
+        }
     }
 }
