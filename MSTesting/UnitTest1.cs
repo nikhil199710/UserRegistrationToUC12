@@ -105,13 +105,14 @@ namespace MSTesting
         }
 
         [TestMethod]
-        public void TestEmails()
+        [DataRow("abc@yahoo.com",true)]
+        [DataRow("abc-100@yahoo.com",true)]
+        [DataRow("abc@.com.my", false)]
+        public void TestEmails(string input,bool expected)
         {
             Pattern pattern = new Pattern();
-            bool expected = false;
-            string input = "abc@yahoo.com";
-
-            bool var = pattern.validatePasswordWithSpecialChar(input);
+            
+            bool var = pattern.validate_email_set(input);
 
             Assert.AreEqual(expected, var);
         }
