@@ -1,3 +1,9 @@
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="User Registration MS Testing.cs" company="Bridgelabz">
+//   Copyright © 2018 Company// </copyright>
+// <creator Name="Nikhil Kumar Yadav"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using User_Registration;
 
